@@ -1,0 +1,28 @@
+body {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #262626;
+}
+
+section {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: #262626;
+  max-width: 800px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-bottom: 1px;
+  color: white;
+  background-color: #3B4B59;
+  border-radius: 16px;
+}

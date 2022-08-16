@@ -1,0 +1,38 @@
+<section>
+  <header>
+    <h1>CONTATO</h1>
+  </header>
+
+  <body>
+    <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+
+      <h5 *ngIf="success">Sua mensagem foi enviada com sucesso!</h5>
+
+      <label>
+        Nome:
+        <input type="text" formControlName="name">
+        <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
+          <div *ngIf="messageForm.controls.name.errors.required">O campo nome não pode estar vazio!</div>
+        </div>
+      </label>
+
+      <label>
+        E-mail:
+        <input type="text" formControlName="email">
+        <div *ngIf="submitted && messageForm.controls.email.errors" class="error">
+          <div *ngIf="messageForm.controls.email.errors.required">O campo E-mail não pode estar vazio!</div>
+        </div>
+      </label>
+
+      <label>
+        Mensagem:
+        <textarea formControlName="message"></textarea>
+        <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+          <div *ngIf="messageForm.controls.message.errors.required">O Campo mensagem não pode estar vazio!</div>
+        </div>
+      </label>
+
+      <input type="submit" value="Enviar mensagem" class="cta">
+    </form>
+  </body>
+</section>
