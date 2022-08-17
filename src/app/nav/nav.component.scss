@@ -1,34 +1,87 @@
-header {
-  background: #3B4B59;
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #3B4B59;
+  position: relative;
+}
 
-  .logo {
-    display: flex;
-    font-weight: bold;
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+}
+
+.nav > .nav-button {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 13px 10px 13px 10px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #8EA8BF;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-button {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-
-  nav {
-    justify-self: right;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        float: left;
-
-        a {
-          padding: 1.5em;
-          text-transform: uppercase;
-          font-size: .8em;
-
-          &:hover {
-            background: #8EA8BF;
-            border-radius: 8px;
-          }
-        }
-      }
-    }
+  .nav > .nav-button > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 20%;
   }
-
+  .nav > .nav-button > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #dfdfdf;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #262626;
+    height: 0px;
+    transition: all 0.2s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
