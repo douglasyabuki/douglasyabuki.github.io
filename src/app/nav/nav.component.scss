@@ -5,11 +5,11 @@
   position: relative;
 }
 
-.nav > .nav-header {
+.nav>.nav-header {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav>.nav-header>.nav-title {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
@@ -17,52 +17,30 @@
   padding: 10px;
 }
 
-.nav > .nav-button {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  text-decoration: none;
-  color: white;
-  padding: 13px 10px 13px 10px;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: #8EA8BF;
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
 @media (max-width:600px) {
-  .nav > .nav-button {
+  .nav>.nav-button {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-button > label {
+
+  .nav>.nav-button>label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding-top: 12px;
     border-radius: 20%;
   }
-  .nav > .nav-button > label > span {
+
+  .nav>.nav-button>label>span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #dfdfdf;
   }
-  .nav > .nav-links {
+
+  .nav>.nav-links {
     position: absolute;
     display: block;
     width: 100%;
@@ -73,15 +51,55 @@
     top: 50px;
     left: 0px;
   }
-  .nav > .nav-links > a {
+
+  .nav>.nav-links>a {
+    color: white;
     display: block;
     width: 100%;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+
+  .nav>.nav-links>a:hover {
+    background-color: #8EA8BF;
+  }
+
+  .nav>#nav-check {
+    display: none;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
+
+  .nav>#nav-check:checked~.nav-links {
+    height: 120px;
     overflow-y: auto;
+    border-bottom: 2px white;
+  }
+
+}
+
+@media (min-width:600px) {
+  .nav>.nav-button {
+    display: none;
+  }
+
+  .nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+
+  .nav>.nav-links>a {
+    display: inline-block;
+    color: white;
+    padding: 13px 10px 13px 10px;
+  }
+
+  .nav>.nav-links>a:hover {
+    background-color: #8EA8BF;
+  }
+
+  .nav>#nav-check {
+    display: none;
   }
 }

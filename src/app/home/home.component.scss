@@ -1,16 +1,8 @@
-body {
-  text-align: justify;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: #262626;
-}
-
 section {
+  min-width: 300px;
+  width: 60%;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
+  display: block;
   border-radius: 16px;
   background-color: #262626;
   max-width: 800px;
@@ -26,3 +18,17 @@ header {
   background-color: #3B4B59;
   border-radius: 16px;
 }
+
+body {
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #262626;
+}
+
+
+
+
+
