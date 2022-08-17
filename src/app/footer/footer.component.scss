@@ -12,8 +12,10 @@ section {
 
 ul {
   text-align: center;
+  list-style-type: none;
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
   gap: 4px;
 }
 
