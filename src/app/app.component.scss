@@ -1,34 +1,27 @@
-*{
+* {
   background-color: #F2AA52;
 }
+
 body,
 html {
-  min-height: 250px;
   height: 100%;
   margin: 0 auto;
 }
+
 a {
   text-decoration: none;
 }
 
 section {
-  position: relative;
-  min-height: 100%;
+  height: 100%;
   padding-top: 150px;
   padding-bottom: 150px;
-  z-index: 2;
 }
 
-#nav{
-  position: relative;
-  top: 0;
+#nav {
   width: 100%;
-  z-index: 3;
 }
 
-#footer{
-  position: relative;
-  bottom: 0;
+#footer {
   width: 100%;
-  z-index: 3;
 }
