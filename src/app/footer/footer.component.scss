@@ -40,7 +40,7 @@
 
   .social a:hover {
     opacity: 0.9;
-    background: #F2AA52;
+    background: #F2F0F0;
   }
 
   .copyright {
@@ -63,18 +63,17 @@ section {
 }
 
 ul {
-  text-align: center;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  padding-right: 10px;
+  text-align: center;
   gap: 4px;
 }
 
 ul a {
   padding-right: 33px;
   opacity: 0.7;
-  color: #dfdfdf;
+  color: #F2F0F0;
 }
 
 ul a:hover {
@@ -83,7 +82,8 @@ ul a:hover {
 
 .social {
   object-fit: cover;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .social a {
@@ -91,7 +91,7 @@ ul a:hover {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  display: inline-block;
+  display: flex;
   text-align: center;
   border-radius: 50%;
   border: 1px solid #8C2703;
@@ -102,13 +102,13 @@ ul a:hover {
 
 .social a:hover {
   opacity: 0.9;
-  background: #F2AA52;
+  background: #F2F0F0;
 }
 
 .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: white;
+  color: #F2F0F0;
 }
 }
