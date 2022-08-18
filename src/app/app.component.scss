@@ -1,10 +1,11 @@
+*{
+  background-color: #F2AA52;
+}
 body,
 html {
   min-height: 250px;
   height: 100%;
   margin: 0 auto;
-  background-color: #dfdfdf;
-  color: #dfdfdf;
 }
 a {
   text-decoration: none;
@@ -13,17 +14,18 @@ a {
 section {
   position: relative;
   min-height: 100%;
-  margin-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 #nav{
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
 }
 
 #footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
