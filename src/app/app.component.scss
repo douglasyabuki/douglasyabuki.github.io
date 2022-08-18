@@ -1,0 +1,29 @@
+body,
+html {
+  min-height: 250px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #dfdfdf;
+  color: #dfdfdf;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  min-height: 100%;
+  margin-top: 100px;
+}
+
+#nav{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
