@@ -1,8 +1,8 @@
 .host {
-  background-color: #590902;
+  background-color: #011526;
   margin: 0 auto;
   min-width: 300px;
-  border-bottom: 6px solid #400101;
+  border-bottom: 6px solid #011526;
 }
 
 @media (max-width:900px) {
@@ -33,7 +33,7 @@
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #590902;
+    border: 1px solid #011526;
     margin: 0 8px;
     color: inherit;
     opacity: 0.75;
@@ -41,14 +41,14 @@
 
   .social a:hover {
     opacity: 0.9;
-    background: #F2F2F2;
+    background: #DFEDF2;
   }
 
   .copyright {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: #F2F2F2;
+    color: #DFEDF2;
   }
   }
 
@@ -74,7 +74,7 @@ ul {
 ul a {
   padding-right: 33px;
   opacity: 0.7;
-  color: #F2F2F2;
+  color: #DFEDF2;
 }
 
 ul a:hover {
@@ -95,7 +95,7 @@ ul a:hover {
   display: flex;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #590902;
+  border: 1px solid #011526;
   margin: 0 8px;
   color: inherit;
   opacity: 0.75;
@@ -103,13 +103,13 @@ ul a:hover {
 
 .social a:hover {
   opacity: 0.9;
-  background: #F2F2F2;
+  background: #DFEDF2;
 }
 
 .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #F2F2F2;
+  color: #DFEDF2;
 }
 }

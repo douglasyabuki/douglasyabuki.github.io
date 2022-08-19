@@ -15,17 +15,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F2F2F2;
+    background: #DFEDF2;
     width: 600px;
-    border-bottom: 6px solid #400101;
+    border-bottom: 6px solid #013440;
 
     header {
       width: 600px;
-      background-color: #590902;
+      background-color: #011526;
       padding: 16px;
       padding-bottom: 0px;
-      border-top: 6px solid #400101;
-      border-bottom: 6px solid #400101;
+      border-top: 6px solid #013440;
+      border-bottom: 6px solid #013440;
 
       h1 {
         font-family: 'Eloquence Light';
@@ -34,7 +34,7 @@
         font-weight: lighter;
         justify-content: center;
         text-align: center;
-        color: #F2F2F2;
+        color: #DFEDF2;
       }
 
       .social {
@@ -49,18 +49,18 @@
       font-family: 'Calibri Light';
       font-size: 11px;
       color: black;
-      background: #F2F2F2;
+      background: #DFEDF2;
 
       h2{
         padding-top: 16px;
         font-family: 'Calibri';
         font-size: 12px;
-        color: #400101;
+        color: #013440;
         border-top: 1px solid black;
       }
       h3{
         font-size: 10px;
-        color: #590902;
+        color: #011526;
       }
     }
   }
@@ -77,17 +77,17 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F2F2F2;
+  background: #DFEDF2;
   width: 600px;
-  border-bottom: 6px solid #400101;
+  border-bottom: 6px solid #013440;
 
   header {
     width: 600px;
-    background-color: #590902;
+    background-color: #011526;
     padding: 16px;
     padding-bottom: 0px;
-    border-top: 6px solid #400101;
-    border-bottom: 6px solid #400101;
+    border-top: 6px solid #013440;
+    border-bottom: 6px solid #013440;
 
     h1 {
       font-family: 'Eloquence Light';
@@ -96,7 +96,7 @@ section {
       font-weight: lighter;
       justify-content: center;
       text-align: center;
-      color: #F2F2F2;
+      color: #DFEDF2;
     }
 
     .social {
@@ -111,18 +111,18 @@ section {
     font-family: 'Calibri Light';
     font-size: 11px;
     color: black;
-    background: #F2F2F2;
+    background: #DFEDF2;
 
     h2{
       padding-top: 16px;
       font-family: 'Calibri';
       font-size: 12px;
-      color: #400101;
+      color: #013440;
       border-top: 1px solid black;
     }
     h3{
       font-size: 10px;
-      color: #590902;
+      color: #011526;
     }
   }
 }
