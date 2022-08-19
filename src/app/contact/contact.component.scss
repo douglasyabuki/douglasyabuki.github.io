@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    background-color: #8C2703;
+    background-color: #590902;
     min-width: 300px;
     width: 90%;
     margin: auto;
@@ -25,19 +25,19 @@
     justify-content: center;
     gap: 10px;
     padding-bottom: 1px;
-    color: #F2F0F0;
-    background-color: #260101;
+    color: #F2F2F2;
+    background-color: #400101;
     border-radius: 16px;
   }
 
   body {
-    color: #F2F0F0;
-    background-color: #8C2703;
+    color: #F2F2F2;
+    background-color: #590902;
   }
 
   label {
     display: block;
-    color: #F2F0F0;
+    color: #F2F2F2;
 
     input {
       @include boxInfo();
@@ -51,7 +51,7 @@
 
     .error {
       margin-top: -20px;
-      background: #D9BFA9;
+      background: #8C5642;
       padding: 8px;
       display: inline-block;
       font-size: 14px;
@@ -61,9 +61,9 @@
   }
 
   .cta {
-    background: #260101;
+    background: #400101;
     border: none;
-    color: #F2F0F0;
+    color: #F2F2F2;
 
     text-transform: uppercase;
     border-radius: 4px;
@@ -101,7 +101,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 16px;
-    background-color: #8C2703;
+    background-color: #590902;
     width: 60%;
     min-width: 550px;
     max-width: 600px;
@@ -114,19 +114,19 @@
     justify-content: center;
     gap: 10px;
     padding-bottom: 1px;
-    color: #F2F0F0;
-    background-color: #260101;
+    color: #F2F2F2;
+    background-color: #400101;
     border-radius: 16px;
   }
 
   body {
-    color: #F2F0F0;
-    background-color: #8C2703;
+    color: #F2F2F2;
+    background-color: #590902;
   }
 
   label {
     display: block;
-    color: #F2F0F0;
+    color: #F2F2F2;
 
     input {
       @include boxInfo();
@@ -140,7 +140,7 @@
 
     .error {
       margin-top: -20px;
-      background: #D9BFA9;
+      background: #8C5642;
       padding: 8px;
       display: inline-block;
       font-size: 14px;
@@ -150,9 +150,9 @@
   }
 
   .cta {
-    background: #260101;
+    background: #400101;
     border: none;
-    color: #F2F0F0;
+    color: #F2F2F2;
 
     text-transform: uppercase;
     border-radius: 4px;
