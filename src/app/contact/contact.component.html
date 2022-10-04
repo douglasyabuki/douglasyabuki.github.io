@@ -1,38 +1,44 @@
 <section>
+  <div class="edge"></div>
   <header>
-    <h1>CONTATO</h1>
+    <h2>E N T R E</h2>
+    <h2>E M</h2>
+    <h2>C O N T A T O</h2>
+    <h1>C O M I G O</h1>
   </header>
 
+  <mat-divider></mat-divider>
+
   <body>
+
     <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
 
       <h5 *ngIf="success">Sua mensagem foi enviada com sucesso!</h5>
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Nome completo:</mat-label>
+        <input matInput placeholder="" formControlName="name" required>
+      </mat-form-field>
 
-      <label>
-        Nome:
-        <input type="text" formControlName="name">
-        <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
-          <div *ngIf="messageForm.controls.name.errors.required">O campo nome não pode estar vazio!</div>
-        </div>
-      </label>
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>E-mail:</mat-label>
+        <input matInput placeholder="" formControlName="email" required>
+      </mat-form-field>
 
-      <label>
-        E-mail:
-        <input type="text" formControlName="email">
-        <div *ngIf="submitted && messageForm.controls.email.errors" class="error">
+      <!-- <div *ngIf="submitted && messageForm.controls.email.errors" class="error">
           <div *ngIf="messageForm.controls.email.errors.required">O campo E-mail não pode estar vazio!</div>
-        </div>
-      </label>
-
-      <label>
-        Mensagem:
-        <textarea formControlName="message"></textarea>
-        <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
+        </div> -->
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>Mensagem</mat-label>
+        <textarea matInput placeholder="" formControlName="message" required></textarea>
+      </mat-form-field>
+      <!-- <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
           <div *ngIf="messageForm.controls.message.errors.required">O Campo mensagem não pode estar vazio!</div>
-        </div>
-      </label>
+        </div> -->
 
-      <input type="submit" value="Enviar mensagem" class="cta">
+      <div class="fieldButtons">
+        <button mat-raised-button class="cta" type="submit" value="Enviar Mensagem">Enviar</button>
+      </div>
     </form>
   </body>
+  <div class="edge"></div>
 </section>

@@ -1,176 +1,83 @@
-@media (max-width:600px) {
-
-  @mixin boxInfo {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 1px;
-    border-radius: 5px;
-  }
-
-  section {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    background-color: #262626;
-    min-width: 300px;
-    width: 90%;
-    margin: auto;
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 1px;
-    color: #D9D8D7;
-    background-color: #2C403C;
-    border-radius: 16px;
-  }
-
-  body {
-    color: #D9D8D7;
-    background-color: #262626;
-  }
-
-  label {
-    display: block;
-    color: #D9D8D7;
-
-    input {
-      @include boxInfo();
-      min-height: 20px;
-    }
-
-    textarea {
-      @include boxInfo();
-      min-height: 60px;
-    }
-
-    .error {
-      margin-top: -20px;
-      background: #2C403C;
-      padding: 8px;
-      display: inline-block;
-      font-size: 14px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-  }
-
-  .cta {
-    background: #2C403C;
-    border: none;
-    color: #D9D8D7;
-
-    text-transform: uppercase;
-    border-radius: 4px;
-    padding: 16px;
-    cursor: pointer;
-    font-family: 'Calibri Light';
-  }
-
-  .results {
-    margin-top: 50px;
-
-    strong {
-      display: block;
-    }
-
-    span {
-      margin-bottom: 20px;
-      display: block;
-    }
-  }
+h1 {
+  color: #1F232D;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
-@media (min-width:600px) {
+h2 {
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+  font-size: 35px;
+  margin-top: 30px;
+  line-height: 25px;
+  text-align: center;
+}
 
-  @mixin boxInfo {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 1px;
-    border-radius: 5px;
-  }
+h3{
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+  font-size: 25px;
+  text-align: left;
+  margin: 30px 0px 20px 10px;
+  display: inline-flex;
+}
 
-  section {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 16px;
-    background-color: #262626;
-    width: 60%;
-    min-width: 550px;
-    max-width: 600px;
-    margin: auto;
-  }
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 1px;
-    color: #D9D8D7;
-    background-color: #2C403C;
-    border-radius: 16px;
-  }
-
-  body {
-    color: #D9D8D7;
-    background-color: #262626;
-  }
-
-  label {
-    display: block;
-    color: #D9D8D7;
-
-    input {
-      @include boxInfo();
-      min-height: 20px;
-    }
-
-    textarea {
-      @include boxInfo();
-      min-height: 60px;
-    }
-
-    .error {
-      margin-top: -20px;
-      background: #2C403C;
-      padding: 8px;
-      display: inline-block;
-      font-size: 14px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-    }
-  }
-
-  .cta {
-    background: #2C403C;
-    border: none;
-    color: #D9D8D7;
-
-    text-transform: uppercase;
-    border-radius: 4px;
-    padding: 16px;
-    cursor: pointer;
-    font-family: 'Calibri Light';
-  }
-
-  .results {
-    margin-top: 50px;
-
-    strong {
-      display: block;
-    }
-
-    span {
-      margin-bottom: 20px;
-      display: block;
-    }
-  }
+h4{
+  margin-bottom: 0px;
+}
+section {
+  width: 300px;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+mat-divider{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+header{
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+body {
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+}
+.edge {
+  height: 3px;
+  min-width: 300px;
+  width: 100%;
+  background-image: linear-gradient(to right, #EEC367, #EEC367, #BF9234, #EFC468, #EFC468)
+}
+.full{
+  width: 90%;
+  left: 5%;
+}
+textarea{
+  min-height: 80px;
+}
+.xs{
+  margin: 0 auto;
+  width: 90%;
+  left: 5%;
+}
+.fieldButtons{
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.cta{
+  background-color: #1F232D;
+  border: 2px solid #BF9234;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 60%;
+  color: #D9D8D7;
 }
